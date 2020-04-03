@@ -1,0 +1,27 @@
+/* pages/classic/classic.wxss */
+
+
+.heitao{
+  width: 100px;
+  height: 100px;
+}
+
+.color1{
+  background-color: red;
+}
+.color2{
+  background-color: green
+}
+.color3{
+  background-color: blue;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: gray;
+  height: 400px;
+
+}
