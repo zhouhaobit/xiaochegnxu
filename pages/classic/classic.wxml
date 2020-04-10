@@ -1,0 +1,14 @@
+<view class="contaner">
+  <view class="header">
+    <v-epsolid class="epsolid" index="{{classic.index}}" />
+    <v-like class="like" bind:like="onLike" like="{{reslike.like_status}}" count="{{reslike.fav_nums}}" />
+    <v-button class="share-btn" open-type="share">
+      <image class="share" slot="img" src="/images/tab/share.png" />
+    </v-button>
+  </view>
+
+  <v-movie hidden="{{classic.type !=100}}" img="{{classic.image}}" content="{{classic.content}}" />
+  <v-music wx:if="{{classic.type==200}}" img="{{classic.image}}" content="{{classic.content}}" src="{{classic.url}}" />
+  <v-essay hidden="{{classic.type !=300}}" img="{{classic.image}}" content="{{classic.content}}" />
+  <v-navi bind:left="Previous" bind:right="Next" class="navi" first="{{first}}" last="{{last}}" title="{{classic.title}}" />
+</view>
